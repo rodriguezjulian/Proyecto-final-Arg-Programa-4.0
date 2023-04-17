@@ -1,0 +1,72 @@
+[{ "id": 0,
+   "nombre": "Fuente Redragon",
+   "precio" : 9,
+   
+   "cantidad": 50,
+   "img" : "fuente-removebg-preview.png"
+},
+{ "id": 1,
+    "nombre": "Placa de video 1660",
+    "precio" : 18,
+    
+    "cantidad": 50,
+    "img" : "1660-removebg-preview.png"
+ },
+ { "id": 2,
+    "nombre": "Gabinete Blanco",
+    "precio" : 36,
+    
+    "cantidad": 50,
+    "img" : "gabinete2-removebg-preview.png"
+ },
+ { "id": 3,
+    "nombre": "Gabinete negro",
+    "precio" : 42,
+    
+    "cantidad": 50,
+    "img" : "gabinete1-removebg-preview.png"
+ },
+
+ {"id": 4,
+    "nombre": "Gabinete basico negro",
+    "precio" : 85,
+    
+    "cantidad": 50,
+    "img" : "gabinete-removebg-preview.png"},
+
+ {"id": 5,
+        "nombre": "SSD Kingston",
+        "precio" : 123,
+        
+        "cantidad": 50,
+        "img" : "ssd-removebg-preview.png"},
+ { "id": 6,
+         "nombre": "Procesador Ryzen 5",
+         "precio" : 56,
+         
+         "cantidad": 50,
+         "img" : "ryzen_5-removebg-preview.png"
+      },
+ { "id": 7,
+         "nombre": "Pocesador Intel core-I3",
+         "precio" : 99,
+         
+         "cantidad": 50,
+         "img" : "i3-removebg-preview.png"
+      },
+{ "id": 8,
+         "nombre": "Ram HyperX",
+         "precio" : 679,
+         
+         "cantidad": 50,
+         "img" : "ram-removebg-preview.png"
+      },
+      { "id": 9,
+         "nombre": "Placa de video 3090",
+         "precio" : 90,
+         
+         "cantidad": 50,
+         "img" : "3090-removebg-preview.png"
+      }
+
+]
