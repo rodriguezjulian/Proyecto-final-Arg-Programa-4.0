@@ -49,7 +49,7 @@ fetch(`../scripts/items.json`)
       //addEventListener AGREGA UN EVENTO
         document.getElementById(`botonCompra${element.id}`).addEventListener(`click`, ()=>{
           
-          
+          //TIRA UNA NOTIFICACION AL AGREGAR UN ITEM AL CARRITO
           Toastify({
 
             text: "New item added to cart",
@@ -59,7 +59,7 @@ fetch(`../scripts/items.json`)
             }).showToast();
             
             
-            
+            //VERIFICACION DE STOCK
             if(arrProds.find(producto => producto.id == element.id)){
                 let index= arrProds.findIndex(producto => producto.id == element.id)
                 arrProds[index].quantity < element.cantidad ? arrProds[index].quantity++ : swal({
@@ -70,6 +70,7 @@ fetch(`../scripts/items.json`)
                 
                 localStorage.setItem(`carrito`,JSON.stringify(arrProds))
             } else {
+              // SI HAY STOCK CREA LA NUEVA INSTANCIA
                 let newItem= new Prods(element.id,element.nombre,element.precio,element.size,element.cantidad,element.img)
                 arrProds.push(newItem)
                 localStorage.setItem(`carrito`,JSON.stringify(arrProds))
