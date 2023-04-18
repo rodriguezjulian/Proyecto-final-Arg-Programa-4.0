@@ -1,3 +1,4 @@
+// CREO OBTEJO CON SUS CAMPOS Y LO INICIALIZO CON VALORES
 class Prods{
     constructor(id,nombre,precio,size,cantidad,img){
     this.id=id;
@@ -9,7 +10,7 @@ class Prods{
     this.quantity= 0;
     };
 };
-
+//CREO ARRAY VACIO
 let arrProds = [];
 
 let cart = document.getElementById(`cartBody`);
@@ -27,11 +28,12 @@ if (!localStorage.getItem(`carrito`)) {
     localStorage.setItem(`carrito`,[])
     
 };
-
+// ESTE SCRIPT RENDERIZA CADA UNO DE LOS OBJETOS, LOS TRAE DEL JSON AL HTML
 fetch(`../scripts/items.json`)
 .then(promise => promise.json())
 .then(data => {
     data.forEach(element=> {
+      //POR CADA ELEMENTO DEL JSON VA A CREAR UNO DE LOS ARTICULOS
         div1.innerHTML += `<div class="card bg-black" id = ${element.id} style="width: 18rem; margin: 9px;">
         
         <img src="../img/${element.img}" class="card-img-top" alt="imagen">
@@ -44,6 +46,7 @@ fetch(`../scripts/items.json`)
     });
 
     data.forEach(element=> {
+      //addEventListener AGREGA UN EVENTO
         document.getElementById(`botonCompra${element.id}`).addEventListener(`click`, ()=>{
           
           
