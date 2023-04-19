@@ -29,7 +29,7 @@ if (!localStorage.getItem(`carrito`)) {
     
 };
 // ESTE SCRIPT RENDERIZA CADA UNO DE LOS OBJETOS, LOS TRAE DEL JSON AL HTML
-fetch(`../scripts/items.json`)
+fetch(`http://localhost:3000/items`)
 .then(promise => promise.json())
 .then(data => {
     data.forEach(element=> {
@@ -80,16 +80,7 @@ fetch(`../scripts/items.json`)
     
 });
 
-payment.onclick = () => {
-    
-    swal({
-    title: "Succed!",
-    text: "Payment submitted correctly!",
-    icon: "success",
-  });
 
-
-}
 
 btnProds.onclick = () => {
 
@@ -113,5 +104,9 @@ let payout = document.getElementById("payment")
 
 payout.onclick = ()=>{
 
-    console.log("funciona")
+  swal({
+    title: "Succed!",
+    text: "Payment submitted correctly!",
+    icon: "success",
+  });
 }

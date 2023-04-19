@@ -1,4 +1,4 @@
-[{ "id": 0,
+{"items": [{ "id": 0,
    "nombre": "Fuente Redragon",
    "precio" : 9,
    
@@ -69,4 +69,4 @@
          "img" : "3090-removebg-preview.png"
       }
 
-]
+]}
