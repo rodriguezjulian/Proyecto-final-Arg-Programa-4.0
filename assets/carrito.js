@@ -1,4 +1,5 @@
 // CREO OBTEJO CON SUS CAMPOS Y LO INICIALIZO CON VALORES
+
 class Prods{
     constructor(id,nombre,precio,size,cantidad,img){
     this.id=id;
@@ -12,6 +13,7 @@ class Prods{
 };
 //CREO ARRAY VACIO
 let arrProds = [];
+
 
 let cart = document.getElementById(`cartBody`);
 let btnProds = document.getElementById(`btn`);
@@ -111,31 +113,3 @@ payout.onclick = ()=>{
   });
 }
 
-/* ------------------------- Exportar a PDF -------------------------------------------- */
-let modal = document.getElementById("modalBuy");
-let pdf = document.getElementById("toPDF");
-
-pdf.onclick = function() {
-  var doc = new jsPDF('p', 'pt',
-  'letter');
-  var margin = 20;
-  var scale = (doc.internal.pageSize.width - margin * 2) / document.body.clientWidth;
-  var scale_mobile = (doc. internal.pageSize.width - margin * 2) /
-  document.body.getBoundingClientRect ();
-  // checking
-  // checking
-  if(/Android| webOS |iPhone| iPad|iPod|
-  BlackBerry| TEMobile|Opera Mini/i.test
-  (navigator.userAgent)) {
-  // mobile
-  doc.html(modal, {
-  x: margin,
-  y: margin,
-  html2canvas: {
-  scale: scale_mobile,
-  },
-  callback: function (doc)
-  doc.output('dataurlneewwindow'
-  {filename:'pdf.pdf'})
-
-}}}
